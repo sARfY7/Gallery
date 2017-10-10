@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/gallery.js"></script>
+  </head>
+  <body>
+
+    <!-- Logo -->
+
+    <div class="container-fluid text-white text-center" id="logo">
+      <p class="display-4 pt-lg-4 pt-md-4">Gallery</p>
+    </div>
+
+    <!-- Search Modal -->
+
+    <div class="search-overlay">
+      <img src="./img/close.svg" alt="Close" id="cross" title="Close">
+      <img src="" alt="" id="search-result">
+      <p id="error"></p>
+    </div>
+
+    <!-- Search Box -->
+
+    <div class="container-fluid">
+        <div class="row p-lg-4 pt-md-4">
+          <div class="col-lg-4 col-md-4">
+
+          </div>
+          <div class="col-lg-4 text-center col-md-4">
+                <input type="text" class="inp" name="search" placeholder="Search" autocomplete="off"><button type="submit" class="custom-btn" name="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+          <div class="col-lg-4 col-md-4">
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+
+      <div class="body-overlay">
+        <img src="./img/close.svg" alt="Close" id="close" title="Close">
+        <img src="" alt="" id="image">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Gallery -->
+
+      <div class="container mt-lg-5" id="gallery">
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <div class="card custom-card height-1">
+              <div class="overlay" id="ny">
+                <p class="cap text-center">New York</p>
+              </div>
+              <img src="./img/ny.jpg" alt="New York">
+
+            </div>
+
+            <div class="card custom-card height-2">
+              <div class="overlay" id="chicago">
+                <p class="cap text-center">Chicago</p>
+              </div>
+              <img src="./img/chicago.jpg" alt="Chicago">
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 col-md-4">
+
+            <div class="card custom-card height-2">
+              <div class="overlay" id="la">
+                <p class="cap text-center">Los Angeles</p>
+              </div>
+              <img src="./img/la.jpg" alt="Los Angeles">
+            </div>
+
+            <div class="card custom-card height-1">
+              <div class="overlay" id="seattle">
+                <p class="cap text-center">Seattle</p>
+              </div>
+              <img src="./img/seattle.jpg" alt="Seattle">
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 col-md-4">
+
+            <div class="card custom-card height-1">
+              <div class="overlay" id="london">
+                <p class="cap text-center">London</p>
+              </div>
+              <img src="./img/london.jpg" alt="London">
+            </div>
+
+            <div class="card custom-card height-2">
+              <div class="overlay" id="paris">
+                <p class="cap text-center">Paris</p>
+              </div>
+              <img src="./img/paris.jpg" alt="Paris">
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+  </body>
+  <script src="https://use.fontawesome.com/41be7361c0.js"></script>
+</html>

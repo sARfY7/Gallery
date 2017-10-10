@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+
+body {
+  background: #373C53;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+#logo {
+  font-family: 'Sacramento', cursive;
+}
+
+.search-overlay {
+  position: absolute;
+  z-index: 100;
+  background: rgba(51, 55, 69, 0.90);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+  position: fixed;
+}
+
+.search-overlay.reveal {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+
+.inp {
+  width: 75%;
+  height: 150%;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  padding-left: 10px;
+  vertical-align: middle;
+  -webkit-box-shadow: 0px 15px 36px -1px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 15px 36px -1px rgba(0,0,0,0.3);
+  box-shadow: 0px 15px 36px -1px rgba(0,0,0,0.3);
+  -webkit-transition: position 0.35s, z-index 0.35s;
+  -moz-transition: position 0.35s, z-index 0.35s;
+  transition: position 0.35s, z-index 0.35s;
+}
+
+.inp::-webkit-input-placeholder {
+  font-size: 18px;
+}
+
+.inp:active, .inp:focus {
+  outline: none;
+}
+
+.inp.index {
+  transition: 0.35s;
+  position: relative;
+  z-index: 10000;
+}
+
+.custom-btn {
+  vertical-align: middle;
+  color: #fff;
+  font-size: 20px;
+  background-color: #00E676;
+  width: 10%;
+  height: 150%;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  -webkit-box-shadow: 0px 15px 36px -1px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 15px 36px -1px rgba(0,0,0,0.3);
+  box-shadow: 0px 15px 36px -1px rgba(0,0,0,0.3);
+  -webkit-transition: position 0.35s, z-index 0.35s;
+  -moz-transition: position 0.35s, z-index 0.35s;
+  transition: position 0.35s, z-index 0.35s;
+}
+
+.custom-btn:active, .custom-btn:focus {
+  outline: none;
+}
+
+.custom-btn.index {
+  transition: 0.35s;
+  position: relative;
+  z-index: 10000;
+}
+
+.custom-btn:hover {
+  cursor: pointer;
+  background-color: rgb(29, 255, 142);
+}
+
+
+.custom-card {
+  border-radius: 0;
+  border: none;
+  margin: 20px;
+  width: 250px;
+  -webkit-box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.6);
+  box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.6);
+}
+
+.custom-card:hover {
+  cursor: pointer;
+}
+
+.height-1 {
+  height: 200px;
+}
+
+.height-2 {
+  height: 300px;
+}
+
+#gallery {
+  width: 55%;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(51, 55, 69, 0.60);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+}
+
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.cap {
+  position: absolute;
+  color: #fff;
+  font-size: 18px;
+  font-weight: lighter;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.body-overlay {
+  position: absolute;
+  z-index: 100;
+  background: rgba(51, 55, 69, 0.90);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+  position: fixed;
+}
+
+.body-overlay.show {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+#close {
+  position: absolute;
+  left: 95%;
+  top: 5%;
+  width: auto;
+  height: 50px;
+}
+
+#close:hover, #cross:hover {
+  cursor: pointer;
+}
+
+#cross {
+  position: absolute;
+  left: 95%;
+  top: 5%;
+  width: auto;
+  height: 50px;
+}
+
+#image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: auto;
+  height: 600px;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+#caption {
+  position: absolute;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #fff;
+  left: 50%;
+  top: 95%;
+  transform: translate(-50%,-50%);
+}
+
+#search-result {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%,-50%);
+  width: auto;
+  height: 400px;
+}
+
+#error {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 50px;
+}
